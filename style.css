@@ -87,7 +87,7 @@ p {
 
 .bullet-list-check {
     list-style-type: none;
-    padding-right: 0; 
+    padding-right: 15px; 
 }
 
 .bullet-list-check li {
@@ -160,3 +160,4 @@ p {
         transform: translateY(0);
     }
 }
+
