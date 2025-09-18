@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #5d2e8e; /* Dark Purple */
+    --primary-color: #78297F; /* Dark Purple */
     --slogan-color: #1C0C38; /* Darkest purple */
     --text-color: #343a40; /* Dark text */
     --link-color: #ffffff; /* White text for button */
@@ -217,4 +217,5 @@ p {
     animation-name: fadeInAndUp;
     animation-duration: 2s;
 }
+
 
