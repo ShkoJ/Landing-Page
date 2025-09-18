@@ -57,7 +57,7 @@ h1, h2, .slogan {
     font-size: 1.6rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-weight: bold; /* Ensures the title is bold */
 }
 
 .slogan {
@@ -160,4 +160,5 @@ p {
 
 /* The IDs are no longer needed but kept for reference */
 #bold { font-weight: bold; }
+
 
