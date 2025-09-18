@@ -40,6 +40,11 @@ h1, h2, .slogan {
     margin-bottom: 0.5rem;
 }
 
+.main-title {
+    font-size: 1.6rem; /* Adjusted font size for two lines on phone */
+    margin-bottom: 0.5rem;
+}
+
 .slogan {
     font-size: 1.2rem;
     font-weight: bold;
@@ -104,7 +109,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; /* Added padding to lift it up */
     opacity: 0;
     transform: translateY(20px);
 }
