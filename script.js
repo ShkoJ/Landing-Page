@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const headerLogo = document.querySelector('.header-logo');
     const pageContent = document.querySelector('.page-content');
+    const footerLogo = document.querySelector('.footer-logo');
 
     // Animate the header logo first
     setTimeout(() => {
@@ -15,4 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         pageContent.style.transform = 'translateY(0)';
         pageContent.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
     }, 500);
+
+    // Animate the footer logo
+    setTimeout(() => {
+        footerLogo.style.opacity = '1';
+        footerLogo.style.transform = 'translateY(0)';
+        footerLogo.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+    }, 800);
 });
