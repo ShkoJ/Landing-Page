@@ -216,7 +216,7 @@ p {
 .page-content,
 .footer-logo {
     animation-name: fadeInAndUp;
-    animation-duration: 3s;
+    animation-duration: 6s;
 }
 
 .follow-us-link {
@@ -230,5 +230,6 @@ p {
     text-decoration: underline;
     font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
 }
+
 
 
