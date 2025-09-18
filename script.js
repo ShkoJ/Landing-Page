@@ -8,32 +8,29 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         headerLogo.style.opacity = '1';
         headerLogo.style.transform = 'translateY(0)';
-        headerLogo.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
     }, 200);
 
     // Animate the main content after the header
     setTimeout(() => {
         pageContent.style.opacity = '1';
         pageContent.style.transform = 'translateY(0)';
-        pageContent.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
     }, 500);
 
     // Animate the footer logo
     setTimeout(() => {
         footerLogo.style.opacity = '1';
         footerLogo.style.transform = 'translateY(0)';
-        footerLogo.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
     }, 800);
     
     // Function to check if an element is in the viewport
     function isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
     }
 
     // Function to handle the animation on scroll
