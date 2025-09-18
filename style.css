@@ -32,24 +32,6 @@ body {
     position: relative;
 }
 
-.page-content::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    background-image: url('Purple_Icon@16x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.05;
-    z-index: -1;
-    pointer-events: none;
-    animation: fadeIn 2s ease-out forwards;
-}
-
 h1, h2, .slogan {
     font-family: 'IBM Plex Sans', sans-serif;
     color: var(--primary-color);
@@ -116,12 +98,6 @@ p {
 .register-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.check-icon {
-    width: 20px;
-    height: auto;
-    margin-right: 8px; /* For spacing between text and icon */
 }
 
 .footer-logo {
