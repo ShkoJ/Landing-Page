@@ -99,15 +99,12 @@ p {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
-    /* Animation properties */
-    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-    opacity: 0;
-    transform: translateX(100px);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* The animation transition */
 }
 
-.bullet-list-check li.visible {
-    opacity: 1;
-    transform: translateX(0);
+.bullet-list-check li.hidden {
+    opacity: 0;
+    transform: translateX(100px); /* Starts 100px to the right */
 }
 
 .bullet-list-check li::before {
@@ -163,3 +160,4 @@ p {
 
 /* The IDs are no longer needed but kept for reference */
 #bold { font-weight: bold; }
+
