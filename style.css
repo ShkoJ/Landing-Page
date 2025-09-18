@@ -154,7 +154,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     transform: translateY(20px); /* Initial position for animation */
 }
 
@@ -217,6 +217,7 @@ p {
     animation-name: fadeInAndUp;
     animation-duration: 3s;
 }
+
 
 
 
