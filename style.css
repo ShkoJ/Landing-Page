@@ -80,12 +80,13 @@ h1, h2, .slogan {
     font-weight: bold;
     color: var(--slogan-color); /* Applied new color */
     margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem; /* Reduced padding from 1.25rem to 0.75rem */
 }
 
 .body-text {
     font-size: 0.9rem;
     line-height: 1.6;
+    margin-top: 0; /* Ensures there's no top margin */
     margin-bottom: 1rem;
 }
 
@@ -183,6 +184,11 @@ p {
 
 #bold {
     font-weight: bold;
+}
+
+/* New class for English text */
+.en-font {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* --- New and Modified Animation Rules --- */
