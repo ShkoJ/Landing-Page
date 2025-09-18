@@ -16,22 +16,18 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    direction: rtl;
+    direction: rtl; /* For right-to-left text */
     overflow-x: hidden;
     min-height: 100vh;
 }
 
-.header-logo, .page-content, .footer-logo {
-    opacity: 0;
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
 .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 1rem;
+    opacity: 0;
     transform: translateY(-20px);
-}
-
-.page-content, .footer-logo {
-    transform: translateY(20px);
 }
 
 .header-logo .logo {
@@ -45,30 +41,60 @@ body {
     padding: 1rem 0 2rem;
     text-align: right;
     box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
     position: relative;
 }
 
-/* The rest of your styles are fine... */
+h1, h2, .slogan {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.main-title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--slogan-color); /* Applied new color */
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+.body-text {
+    font-size: 0.9rem; /* Adjusted font size by a tiny amount */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
 
 .bullet-list-check {
     list-style-type: none;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0; 
+    padding-right: 15px; 
 }
 
 .bullet-list-check li {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
-    /* This sets the initial state for the animation */
-    opacity: 0;
-    transform: translateX(100px);
-    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-}
-
-.bullet-list-check li.visible {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .bullet-list-check li::before {
@@ -76,14 +102,13 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('https://placehold.co/20x20/5d2e8e/ffffff?text=✓');
+    background-image: url('Purple_Icon@16x.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     right: -25px;
     top: 0;
 }
-/* The rest of the CSS file is unchanged */
 
 .register-button {
     display: flex;
@@ -122,6 +147,23 @@ body {
     height: auto;
 }
 
-/* The IDs are no longer needed but kept for reference */
-#bold { font-weight: bold; }
+/* Animations */
+@keyframes slideInFromTop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes fadeInAndUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#yes {
+    text-align: center;
+}
+#bold {
+    font-weight: bold;
+}
