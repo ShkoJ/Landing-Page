@@ -221,7 +221,7 @@ p {
 
 .follow-us-link {
     text-align: center;
-    margin-top: 0.3rem;
+    margin-top: 0.1rem;
     font-size: 1rem;
 }
 
@@ -230,4 +230,5 @@ p {
     text-decoration: underline;
     font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
 }
+
 
