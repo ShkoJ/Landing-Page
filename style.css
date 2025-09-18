@@ -105,7 +105,7 @@ p {
 .bullet-list-check {
     list-style-type: none;
     padding-right: 0;
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
 .bullet-list-check li {
@@ -217,3 +217,4 @@ p {
     animation-name: fadeInAndUp;
     animation-duration: 2s;
 }
+
