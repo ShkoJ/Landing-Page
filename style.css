@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans', 'Vazirmatn', sans-serif;
+    font-family: 'Vazirmatn', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     background-color: #ffffff;
     color: var(--text-color);
     margin: 0;
@@ -61,8 +61,9 @@ body {
     position: relative;
 }
 
+/* Updated font-family for headers */
 h1, h2, .slogan {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Tagesschrift', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 0.5rem;
@@ -79,11 +80,11 @@ h1, h2, .slogan {
     font-weight: bold;
     color: var(--slogan-color); /* Applied new color */
     margin-top: 0;
-    margin-bottom: 1.25rem; /* Reduced from 2.5rem to 1.25rem */
+    margin-bottom: 1.25rem;
 }
 
 .body-text {
-    font-size: 0.9rem; /* Adjusted font size by a tiny amount */
+    font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
