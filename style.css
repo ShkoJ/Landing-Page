@@ -1,24 +1,24 @@
 :root {
-    --primary-color: #78297F; /* Dark Purple */
-    --slogan-color: #1C0C38; /* Darkest purple */
-    --text-color: #343a40; /* Dark text */
-    --link-color: #ffffff; /* White text for button */
-    --shadow-color: rgba(0, 0, 0, 0.15);
+    --primary-color: #78297F; /* Dark Purple */
+    --slogan-color: #1C0C38; /* Darkest purple */
+    --text-color: #343a40; /* Dark text */
+    --link-color: #ffffff; /* White text for button */
+    --shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 body {
-    font-family: 'Vazirmatn', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
-    background-color: #ffffff;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    direction: rtl; /* For right-to-left text */
-    overflow-x: hidden;
-    min-height: 100vh;
+    font-family: 'Vazirmatn', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
+    background-color: #ffffff;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    direction: rtl; /* For right-to-left text */
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* Initial state for all animatable elements */
@@ -26,211 +26,207 @@ body {
 .title-and-slogan-container,
 .page-content,
 .footer-logo {
-    opacity: 0;
+    opacity: 0;
 }
 
 .header-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0 1rem;
-    transform: translateY(-20px); /* Initial position for animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 1rem;
+    transform: translateY(-20px); /* Initial position for animation */
 }
 
 .header-logo .logo {
-    width: 250px;
-    height: auto;
+    width: 250px;
+    height: auto;
 }
 
 .title-and-slogan-container {
-    width: 90%;
-    max-width: 600px;
-    padding: 1rem 0;
-    text-align: right;
-    box-sizing: border-box;
-    transform: translateY(20px); /* Initial position for animation */
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem 0;
+    text-align: right;
+    box-sizing: border-box;
+    transform: translateY(20px); /* Initial position for animation */
 }
 
 .page-content {
-    width: 90%;
-    max-width: 600px;
-    padding: 1rem 0 2rem;
-    text-align: right;
-    box-sizing: border-box;
-    transform: translateY(20px); /* Initial position for animation */
-    position: relative;
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem 0 2rem;
+    text-align: right;
+    box-sizing: border-box;
+    transform: translateY(20px); /* Initial position for animation */
+    position: relative;
 }
 
 /* Updated font-family for headers */
 h1, h2, .slogan {
-    font-family: 'Tagesschrift', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    font-family: 'Tagesschrift', 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main-title {
-    font-size: 1.6rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 .slogan {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--slogan-color); /* Applied new color */
-    margin-top: 0;
-    margin-bottom: 0.75rem; /* Reduced padding from 1.25rem to 0.75rem */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--slogan-color); /* Applied new color */
+    margin-top: 0;
+    margin-bottom: 0.75rem; /* Reduced padding from 1.25rem to 0.75rem */
 }
 
 .body-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-top: 0; /* Ensures there's no top margin */
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 0; /* Ensures there's no top margin */
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bullet-list-check {
-    list-style-type: none;
-    padding-right: 0;
-    padding-right: 25px;
+    list-style-type: none;
+    padding-right: 0;
+    padding-right: 25px;
 }
 
 .bullet-list-check li {
-    position: relative;
-    margin-bottom: 1rem;
-    font-weight: 500;
+    position: relative;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .bullet-list-check li::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('Purple_Icon@16x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -25px;
-    top: 0;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('Purple_Icon@16x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -25px;
+    top: 0;
 }
 
 .register-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 2rem auto;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: var(--link-color);
-    background-color: var(--primary-color);
-    border-radius: 50px;
-    box-shadow: 0 4px 15px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .register-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0;
-    transform: translateY(20px); /* Initial position for animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    padding: 0.5rem 0;
+    transform: translateY(20px); /* Initial position for animation */
 }
 
 .footer-logo .logo {
-    width: 200px;
-    height: auto;
+    width: 200px;
+    height: auto;
 }
 
 /* Animations */
 @keyframes slideInFromTop {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeInAndUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #yes {
-    text-align: center;
+    text-align: center;
 }
 
 #bold {
-    font-weight: bold;
+    font-weight: bold;
 }
 
 /* New class for English text */
 .en-font {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* --- New and Modified Animation Rules --- */
 
 /* The main title and slogan fade in first with no delay */
 .title-and-slogan-container {
-    animation: fadeInAndUp 3s forwards;
+    animation: fadeInAndUp 3s forwards;
 }
 
 /* The header, main content, and footer all fade in after a 4-second delay */
 .header-logo,
 .page-content,
 .footer-logo {
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
 
 /* Specific animations for each section */
 .header-logo {
-    animation-name: slideInFromTop;
-    animation-duration: 3s;
+    animation-name: slideInFromTop;
+    animation-duration: 3s;
 }
 
 .page-content,
 .footer-logo {
-    animation-name: fadeInAndUp;
-    animation-duration: 3s;
+    animation-name: fadeInAndUp;
+    animation-duration: 3s;
 }
 
-/* Added styles for the "Follow Us" link */
-.follow-us {
-    text-align: center;
-    margin-top: -1rem; /* Adjust to bring it closer to the button */
-    margin-bottom: 2rem;
+.follow-us-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
 }
 
-.follow-us a {
-    color: #6c757d; /* Gray color */
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-.follow-us a:hover {
-    color: var(--primary-color);
+.follow-us-link a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
 }
