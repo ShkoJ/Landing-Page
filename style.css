@@ -68,13 +68,9 @@ h1, h2, .slogan {
 }
 
 .body-text {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly reduced font size */
     line-height: 1.6;
     margin-bottom: 1rem;
-}
-
-.body-text::first-line {
-    white-space: pre-wrap;
 }
 
 h2 {
@@ -91,14 +87,14 @@ p {
 
 .bullet-list-check {
     list-style-type: none;
-    padding-right: 20px;
+    padding-right: 0; /* Removed padding */
 }
 
 .bullet-list-check li {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
-    padding-right: 20px; /* Added padding for tab-like effect */
+    padding-right: 40px; /* Adjusted padding to move the whole line */
 }
 
 .bullet-list-check li::before {
@@ -110,7 +106,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: -25px;
+    right: 0;
     top: 0;
 }
 
@@ -135,6 +131,20 @@ p {
 .register-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.footer-logo .logo {
+    width: 200px;
+    height: auto;
 }
 
 /* Animations */
