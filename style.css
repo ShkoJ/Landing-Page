@@ -29,25 +29,24 @@ body {
     box-sizing: border-box;
     opacity: 0;
     transform: translateY(20px);
-    position: relative; /* Needed for the pseudo-element */
+    position: relative;
 }
 
-/* Watermark effect for Purple_Icon@16x.png */
 .page-content::after {
     content: '';
     position: absolute;
-    top: 50%; /* Position the watermark centrally */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px; /* Adjust size as needed, e.g., 250px for phones */
+    width: 250px;
     height: 250px;
     background-image: url('Purple_Icon@16x.png');
-    background-size: contain; 
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0.05; /* Slightly increased opacity for better visibility */
+    opacity: 0.05;
     z-index: -1;
-    pointer-events: none; /* Allows clicks to pass through */
+    pointer-events: none;
     animation: fadeIn 2s ease-out forwards;
 }
 
@@ -72,28 +71,34 @@ p {
     margin-bottom: 1rem;
 }
 
-.bullet-list {
+.bullet-list-check {
     list-style-type: none;
     padding-right: 20px;
 }
 
-.bullet-list li {
+.bullet-list-check li {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
-.bullet-list li::before {
-    content: '•';
-    color: var(--primary-color);
-    font-size: 1.5rem;
+.bullet-list-check li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('Purple_Icon@16x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    right: -20px;
-    top: -5px;
+    right: -25px;
+    top: 0;
 }
 
 .register-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 2rem auto;
     padding: 1rem 1.5rem;
@@ -111,6 +116,12 @@ p {
 .register-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.check-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 8px; /* For spacing between text and icon */
 }
 
 .footer-logo {
