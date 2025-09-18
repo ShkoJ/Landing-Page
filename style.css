@@ -79,7 +79,7 @@ h1, h2, .slogan {
     font-weight: bold;
     color: var(--slogan-color); /* Applied new color */
     margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem; /* Reduced from 2.5rem to 1.25rem */
 }
 
 .body-text {
@@ -191,11 +191,11 @@ p {
     animation: fadeInAndUp 1s forwards;
 }
 
-/* The header, main content, and footer all fade in after a 1.5-second delay */
+/* The header, main content, and footer all fade in after a 4-second delay */
 .header-logo,
 .page-content,
 .footer-logo {
-    animation-delay: 1.5s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 
