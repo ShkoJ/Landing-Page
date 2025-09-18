@@ -188,7 +188,7 @@ p {
 
 /* The main title and slogan fade in first with no delay */
 .title-and-slogan-container {
-    animation: fadeInAndUp 1s forwards;
+    animation: fadeInAndUp 2s forwards;
 }
 
 /* The header, main content, and footer all fade in after a 4-second delay */
@@ -202,11 +202,11 @@ p {
 /* Specific animations for each section */
 .header-logo {
     animation-name: slideInFromTop;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .page-content,
 .footer-logo {
     animation-name: fadeInAndUp;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
