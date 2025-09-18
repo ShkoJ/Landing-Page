@@ -57,6 +57,7 @@ h1, h2, .slogan {
     font-size: 1.6rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .slogan {
@@ -78,6 +79,7 @@ h2 {
     color: var(--primary-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 p {
@@ -85,16 +87,27 @@ p {
     margin-bottom: 1rem;
 }
 
+#yes { text-align: center; }
+
 .bullet-list-check {
     list-style-type: none;
-    padding-right: 0; 
-    padding-right: 15px; 
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .bullet-list-check li {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
+    /* Animation properties */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.bullet-list-check li.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .bullet-list-check li::before {
@@ -102,7 +115,8 @@ p {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('Purple_Icon@16x.png');
+    /* Placeholder image for icon since original is not available */
+    background-image: url('https://placehold.co/20x20/5d2e8e/ffffff?text=✓');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -147,23 +161,5 @@ p {
     height: auto;
 }
 
-/* Animations */
-@keyframes slideInFromTop {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInAndUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-#yes {
-    text-align: center;
-}
-#bold {
-    font-weight: bold;
-}
+/* The IDs are no longer needed but kept for reference */
+#bold { font-weight: bold; }
