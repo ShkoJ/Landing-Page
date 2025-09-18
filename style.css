@@ -68,7 +68,7 @@ h1, h2, .slogan {
 }
 
 .body-text {
-    font-size: 0.95rem; /* Slightly reduced font size */
+    font-size: 0.9rem; /* Adjusted font size by a tiny amount */
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -106,7 +106,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    right: 0;
+    right: -25px;
     top: 0;
 }
 
