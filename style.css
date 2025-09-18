@@ -1,5 +1,6 @@
 :root {
     --primary-color: #5d2e8e; /* Dark Purple */
+    --slogan-color: #1C0C38; /* Darkest purple */
     --text-color: #343a40; /* Dark text */
     --link-color: #ffffff; /* White text for button */
     --shadow-color: rgba(0, 0, 0, 0.15);
@@ -13,18 +14,31 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     direction: rtl; /* For right-to-left text */
     overflow-x: hidden;
     min-height: 100vh;
 }
 
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 1rem;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.header-logo .logo {
+    width: 250px;
+    height: auto;
+}
+
 .page-content {
     width: 90%;
     max-width: 600px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem 0 2rem;
     text-align: right;
     box-sizing: border-box;
     opacity: 0;
@@ -34,23 +48,40 @@ body {
 
 h1, h2, .slogan {
     font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--primary-color);
     line-height: 1.5;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .main-title {
-    font-size: 1.6rem; /* Adjusted font size for two lines on phone */
+    font-size: 1.6rem;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
 .slogan {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #000000;
+    color: var(--slogan-color); /* Applied new color */
     margin-top: 0;
     margin-bottom: 2.5rem;
+}
+
+.body-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.body-text::first-line {
+    white-space: pre-wrap;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -67,6 +98,7 @@ p {
     position: relative;
     margin-bottom: 1rem;
     font-weight: 500;
+    padding-right: 20px; /* Added padding for tab-like effect */
 }
 
 .bullet-list-check li::before {
@@ -105,22 +137,15 @@ p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem; /* Added padding to lift it up */
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.footer-logo .logo {
-    width: 200px;
-    height: auto;
-}
-
 /* Animations */
-@keyframes fadeIn {
+@keyframes slideInFromTop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAndUp {
     to {
         opacity: 1;
         transform: translateY(0);
