@@ -21,18 +21,34 @@ body {
     min-height: 100vh;
 }
 
+/* Initial state for all animatable elements */
+.header-logo,
+.title-and-slogan-container,
+.page-content,
+.footer-logo {
+    opacity: 0;
+}
+
 .header-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0 1rem;
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-20px); /* Initial position for animation */
 }
 
 .header-logo .logo {
     width: 250px;
     height: auto;
+}
+
+.title-and-slogan-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem 0;
+    text-align: right;
+    box-sizing: border-box;
+    transform: translateY(20px); /* Initial position for animation */
 }
 
 .page-content {
@@ -41,8 +57,7 @@ body {
     padding: 1rem 0 2rem;
     text-align: right;
     box-sizing: border-box;
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px); /* Initial position for animation */
     position: relative;
 }
 
@@ -87,8 +102,8 @@ p {
 
 .bullet-list-check {
     list-style-type: none;
-    padding-right: 0; 
-    padding-right: 15px; 
+    padding-right: 0;
+    padding-right: 15px;
 }
 
 .bullet-list-check li {
@@ -138,8 +153,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px); /* Initial position for animation */
 }
 
 .footer-logo .logo {
@@ -161,9 +175,38 @@ p {
         transform: translateY(0);
     }
 }
+
 #yes {
     text-align: center;
 }
+
 #bold {
     font-weight: bold;
+}
+
+/* --- New and Modified Animation Rules --- */
+
+/* The main title and slogan fade in first with no delay */
+.title-and-slogan-container {
+    animation: fadeInAndUp 1s forwards;
+}
+
+/* The header, main content, and footer all fade in after a 1.5-second delay */
+.header-logo,
+.page-content,
+.footer-logo {
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Specific animations for each section */
+.header-logo {
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+}
+
+.page-content,
+.footer-logo {
+    animation-name: fadeInAndUp;
+    animation-duration: 1s;
 }
